@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ビジネスカード</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="tailwind-config.js"></script>
+  <script src="gradient-handler.js"></script>
+</head>
+
+<body class="font-inter bg-gradient-to-br from-slate-50 to-slate-200 min-h-screen flex items-center justify-center p-4 transition-colors duration-300 dark:from-slate-900 dark:to-slate-800">
+  <div class="container w-full max-w-md flex items-center justify-center">
+    <div class="business-card relative w-full bg-white rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-0.5 transition-all duration-300 p-6 flex flex-col justify-between overflow-hidden dark:bg-slate-800 dark:shadow-2xl" style="aspect-ratio: 1.2 / 1;">
+      
+      <!-- Dark Mode Toggle Button -->
+      <button id="theme-toggle" class="absolute top-4 right-4 p-2 rounded-full hover:bg-black/5 dark:hover:bg-white/5 transition-colors duration-300 z-10" aria-label="テーマを切り替える">
+        <img id="sun-icon" src="sun-icon.svg" alt="ライトモード" class="w-5 h-5 transition-all duration-300 brightness-0 saturate-100 invert-[42%] sepia-[11%] saturate-[574%] hue-rotate-[184deg] brightness-[93%] contrast-[92%] dark:invert-[83%] dark:sepia-[10%] dark:saturate-[266%] dark:hue-rotate-[184deg] dark:brightness-[94%] dark:contrast-[86%]">
+        <img id="moon-icon" src="moon-icon.svg" alt="ダークモード" class="w-5 h-5 absolute inset-0 m-auto opacity-0 rotate-90 transition-all duration-300 brightness-0 saturate-100 invert-[42%] sepia-[11%] saturate-[574%] hue-rotate-[184deg] brightness-[93%] contrast-[92%] dark:invert-[83%] dark:sepia-[10%] dark:saturate-[266%] dark:hue-rotate-[184deg] dark:brightness-[94%] dark:contrast-[86%]">
+      </button>
+
+      <!-- SVG Gradients Definition -->
+      <!-- Removed as gradients are now in external SVG files -->
+
+      <!-- Header Section -->
+      <div class="header flex flex-col gap-1">
+        <div class="flex items-center gap-2 mb-4">
+          <object data="code-icon.svg" type="image/svg+xml" class="w-5 h-5">
+            <img src="code-icon.svg" alt="Code icon" />
+          </object>
+          <div class="w-8 h-0.5 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 rounded-full"></div>
+        </div>
+        <h1 class="text-xl font-bold text-slate-900 -tracking-wide mb-1 dark:text-slate-50">田中 太郎</h1>
+        <p class="text-sm font-medium text-gray-600 dark:text-gray-300">ソフトウェアエンジニア</p>
+      </div>
+
+      <!-- Tech Stack Section -->
+      <div class="tech-stack flex flex-col gap-3">
+        <div class="flex flex-wrap gap-1.5">
+          <span class="px-2.5 py-1 text-xs font-medium rounded-md bg-blue-50 text-blue-700 border border-blue-200 hover:-translate-y-px transition-transform cursor-default whitespace-nowrap dark:bg-blue-900/20 dark:text-blue-300 dark:border-blue-700">React</span>
+          <span class="px-2.5 py-1 text-xs font-medium rounded-md bg-green-50 text-green-700 border border-green-200 hover:-translate-y-px transition-transform cursor-default whitespace-nowrap dark:bg-green-900/20 dark:text-green-300 dark:border-green-700">Node.js</span>
+          <span class="px-2.5 py-1 text-xs font-medium rounded-md bg-purple-50 text-purple-700 border border-purple-200 hover:-translate-y-px transition-transform cursor-default whitespace-nowrap dark:bg-purple-900/20 dark:text-purple-300 dark:border-purple-700">TypeScript</span>
+        </div>
+        <div class="flex flex-wrap gap-1.5">
+          <span class="px-2.5 py-1 text-xs font-medium rounded-md bg-orange-50 text-orange-700 border border-orange-200 hover:-translate-y-px transition-transform cursor-default whitespace-nowrap dark:bg-orange-900/20 dark:text-orange-300 dark:border-orange-700">AWS</span>
+          <span class="px-2.5 py-1 text-xs font-medium rounded-md bg-gray-50 text-gray-700 border border-gray-200 hover:-translate-y-px transition-transform cursor-default whitespace-nowrap dark:bg-gray-900/20 dark:text-gray-300 dark:border-gray-700">Docker</span>
+        </div>
+      </div>
+
+      <!-- Contact Info Section -->
+      <div class="contact-info flex flex-col gap-2.5">
+        <div class="flex items-center gap-2.5 text-xs text-gray-600 hover:text-slate-900 transition-colors dark:text-gray-300 dark:hover:text-slate-50">
+          <svg class="w-3.5 h-3.5 text-gray-400 flex-shrink-0 dark:text-gray-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+          <span class="font-medium">tanaka@example.com</span>
+        </div>
+        <div class="flex items-center gap-2.5 text-xs text-gray-600 hover:text-slate-900 transition-colors dark:text-gray-300 dark:hover:text-slate-50">
+          <svg class="w-3.5 h-3.5 text-gray-400 flex-shrink-0 dark:text-gray-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 19c-5 0-8-3-8-8s3-8 8-8 8 3 8 8-3 8-8 8z"></path>
+            <path d="M8.21 13.89L7 23l5.5-5.5L21 9l-11.79 4.89z"></path>
+          </svg>
+          <span class="font-medium">github.com/tanaka-dev</span>
+        </div>
+        <div class="flex items-center gap-2.5 text-xs text-gray-600 hover:text-slate-900 transition-colors dark:text-gray-300 dark:hover:text-slate-50">
+          <svg class="w-3.5 h-3.5 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="url(#contact-gradient)" stroke-width="2">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          <span class="font-medium">東京, 日本</span>
+        </div>
+      </div>
+
+      <!-- Bottom Accent -->
+      <div class="flex justify-end items-end">
+        <div class="w-16 h-0.5 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 rounded-full"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="theme-toggle.js"></script>
+</body>
+
+</html>
