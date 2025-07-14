@@ -3,7 +3,8 @@
     "allow": [
       "Bash(bun run:*)",
       "Bash(node:*)",
-      "Bash(bun:*)"
+      "Bash(bun:*)",
+      "Bash(rm:*)"
     ],
     "deny": []
   }
