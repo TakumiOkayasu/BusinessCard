@@ -30,6 +30,22 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y --no-install-reco
     && locale-gen ja_JP.UTF-8 \
     && localedef -f UTF-8 -i ja_JP ja_JP.UTF-8
 
+# Node.js LTSのインストール（エラーハンドリング付き）
+RUN curl -fsSL https://deb.nodesource.com/setup_lts.x | bash - || { \
+    echo "NodeSource setup failed, falling back to default nodejs"; \
+    apt-get install -y nodejs npm; \
+    } \
+    && apt-get install -y nodejs \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+# npmとpnpmのインストール（エラーチェック付き）
+RUN if command -v npm &> /dev/null; then \
+    npm install -g npm@latest pnpm; \
+    else \
+    echo "npm not found, skipping global package installation"; \
+    fi
+
 WORKDIR /tmp/scripts/
 
 # terminal config
