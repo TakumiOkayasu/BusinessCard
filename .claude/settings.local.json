@@ -4,7 +4,8 @@
       "Bash(bun run:*)",
       "Bash(node:*)",
       "Bash(bun:*)",
-      "Bash(rm:*)"
+      "Bash(rm:*)",
+      "Bash(find:*)"
     ],
     "deny": []
   }
