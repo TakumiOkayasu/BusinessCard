@@ -8,7 +8,7 @@
 		"build": "bun build ./src/*.ts --outdir ./dist --minify",
 		"check": "bunx biome check --write",
 		"preview": "vite preview",
-		"deploy": "bunx wrangler pages deploy ./dist"
+		"deploy": "bunx wrangler pages deploy ./dist --project-name=business-card"
 	},
 	"dependencies": {
 		"@tailwindcss/cli": "^4.1.11",
