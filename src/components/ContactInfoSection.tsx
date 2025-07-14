@@ -8,7 +8,7 @@ interface ContactItemProps {
 
 const ContactItem: React.FC<ContactItemProps> = ({ icon, value }) => {
   return (
-    <div className="flex items-center gap-2.5 text-xs text-gray-600 hover:text-slate-900 transition-colors dark:text-gray-300 dark:hover:text-slate-50">
+    <div className="flex items-center gap-2.5 text-xs text-slate-800 hover:text-slate-900 transition-colors dark:text-white dark:hover:text-gray-100">
       {icon}
       <span className="font-medium">{value}</span>
     </div>
@@ -25,7 +25,7 @@ const ContactInfoSection: React.FC<BusinessCardData> = ({
     <img
       src="/data/email-icon.svg"
       alt="メールアイコン"
-      className="w-3.5 h-3.5 flex-shrink-0"
+      className="w-3.5 h-3.5 flex-shrink-0 brightness-0 saturate-100 invert-[20%] dark:invert-[100%]"
     />
   );
 
@@ -33,7 +33,7 @@ const ContactInfoSection: React.FC<BusinessCardData> = ({
       <img
         src="/data/github-icon.svg"
         alt="githubアイコン"
-        className="w-3.5 h-3.5 flex-shrink-0"
+        className="w-3.5 h-3.5 flex-shrink-0 brightness-0 saturate-100 invert-[20%] dark:invert-[100%]"
       />
     );
 
@@ -41,7 +41,7 @@ const ContactInfoSection: React.FC<BusinessCardData> = ({
       <img
         src="/data/location-icon.svg"
         alt="位置アイコン"
-        className="w-3.5 h-3.5 flex-shrink-0"
+        className="w-3.5 h-3.5 flex-shrink-0 brightness-0 saturate-100 invert-[20%] dark:invert-[100%]"
       />
     );
 
