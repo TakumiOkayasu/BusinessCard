@@ -13,7 +13,7 @@ const HeaderSection: React.FC<HeaderSectionProps> = ({ name, position }) => {
           <img src="/data/code-icon.svg" alt="Code icon" className="w-5 h-5 brightness-0 saturate-100 invert-[20%] dark:invert-[100%]" />
           <div className="w-8 h-0.5 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 rounded-full" />
         </div>
-        <h1 className="text-xl font-bold text-slate-800 -tracking-wide mb-1 mt-1 dark:text-white">
+        <h1 className="text-xl font-bold text-slate-800 -tracking-wide mb-1 mt-4 dark:text-white">
           {name}
         </h1>
         {position && (
