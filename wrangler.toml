@@ -1,13 +1,12 @@
-name = "business-card"
+name = "your-project-name"
 compatibility_date = "2025-07-14"
 pages_build_output_dir = "./dist"
 
-[assets]
-directory = "./dist"
+# Pages でサポートされている設定のみを使用
+[env.production]
+# 必要に応じて環境変数を設定
+# MY_VARIABLE = "production-value"
 
-# wrangler.toml (wrangler v3.88.0^)
+[env.preview]
+# MY_VARIABLE = "preview-value"
 
-[observability.logs]
-enabled = true
-
-invocation_logs = false
