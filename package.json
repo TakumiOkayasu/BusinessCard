@@ -17,6 +17,7 @@
 		"tailwindcss": "^4.1.11"
 	},
 	"devDependencies": {
+		"@anthropic-ai/claude-code": "^1.0.51",
 		"@biomejs/biome": "2.1.1",
 		"@swc/core": "^1.12.11",
 		"@types/react": "^19.1.8",
