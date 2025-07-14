@@ -1,5 +1,13 @@
 name = "business-card"
 compatibility_date = "2025-07-14"
+pages_build_output_dir = "./dist"
 
 [assets]
 directory = "./dist"
+
+# wrangler.toml (wrangler v3.88.0^)
+
+[observability.logs]
+enabled = true
+
+invocation_logs = false
