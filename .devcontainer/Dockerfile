@@ -10,7 +10,7 @@ ENV TZ=Asia/Tokyo \
     LC_ALL=ja_JP.UTF-8 \
     DEVCONTAINER=true
 
-RUN apt update && apt upgrade -y && apt install -y --no-install-recommends \
+RUN apt-get update && apt-get upgrade -y && apt-get install -y --no-install-recommends \
     bash \
     curl \
     git \
@@ -22,6 +22,8 @@ RUN apt update && apt upgrade -y && apt install -y --no-install-recommends \
     build-essential \
     ca-certificates \
     libicu-dev \
+    nodejs \
+    npm \
     webp \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* \
