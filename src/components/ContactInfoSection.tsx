@@ -30,20 +30,20 @@ const ContactInfoSection: React.FC<BusinessCardData> = ({
   );
 
   const githubIcon = (
-			<img
-				src="/data/github-icon.svg"
-				alt="githubアイコン"
-				className="w-3.5 h-3.5 flex-shrink-0"
-			/>
-		);
+      <img
+        src="/data/github-icon.svg"
+        alt="githubアイコン"
+        className="w-3.5 h-3.5 flex-shrink-0"
+      />
+    );
 
   const locationIcon = (
-			<img
-				src="/data/location-icon.svg"
-				alt="位置アイコン"
-				className="w-3.5 h-3.5 flex-shrink-0"
-			/>
-		);
+      <img
+        src="/data/location-icon.svg"
+        alt="位置アイコン"
+        className="w-3.5 h-3.5 flex-shrink-0"
+      />
+    );
 
   return (
     <div className="contact-info flex flex-col gap-2.5">

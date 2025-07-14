@@ -35,7 +35,7 @@ const App: React.FC = () => {
 
 	return (
 		<div className="font-inter bg-gradient-to-br from-slate-50 to-slate-200 min-h-screen flex items-center justify-center p-4 transition-colors duration-300 dark:from-slate-900 dark:to-slate-800">
-			<div className="container w-full max-w-md flex items-center justify-center">
+			<div className="container w-full max-w-3xl flex items-center justify-center">
 				<BusinessCard data={data} />
 			</div>
 		</div>
