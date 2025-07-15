@@ -1,34 +1,35 @@
 {
-	"name": "business-card",
-	"private": true,
-	"version": "1.0.0",
-	"type": "module",
-	"scripts": {
-		"dev": "vite",
-		"build": "vite build",
-		"build:all": "find ./src -name '*.ts' -o -name '*.tsx' | xargs bun build --outdir ./dist --minify",
-		"check": "bunx biome check --write",
-		"preview": "vite preview",
-		"deploy": "bunx wrangler pages deploy ./dist --project-name=business-card"
-	},
-	"dependencies": {
-		"@tailwindcss/cli": "^4.1.11",
-		"@tailwindcss/vite": "^4.1.11",
-		"react": "^19.1.0",
-		"react-dom": "^19.1.0",
-		"tailwindcss": "^4.1.11"
-	},
-	"devDependencies": {
-		"@anthropic-ai/claude-code": "^1.0.51",
-		"@biomejs/biome": "2.1.1",
-		"@swc/core": "^1.12.11",
-		"@types/react": "^19.1.8",
-		"@types/react-dom": "^19.1.6",
-		"@vitejs/plugin-react-swc": "^3.10.2",
-		"globals": "^16.3.0",
-		"typescript": "~5.8.3",
-		"typescript-eslint": "^8.35.1",
-		"vite": "^7.0.4",
-		"vite-plugin-svgr": "^4.3.0"
-	}
+  "name": "business-card",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:all": "find ./src -name '*.ts' -o -name '*.tsx' | xargs bun build --outdir ./dist --minify",
+    "check": "bunx biome check --write",
+    "preview": "vite preview",
+    "deploy": "bunx wrangler pages deploy ./dist --project-name=business-card"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "@tailwindcss/vite": "^4.1.11",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.6.3",
+    "tailwindcss": "^4.1.11"
+  },
+  "devDependencies": {
+    "@anthropic-ai/claude-code": "^1.0.51",
+    "@biomejs/biome": "2.1.1",
+    "@swc/core": "^1.12.11",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@vitejs/plugin-react-swc": "^3.10.2",
+    "globals": "^16.3.0",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.35.1",
+    "vite": "^7.0.4",
+    "vite-plugin-svgr": "^4.3.0"
+  }
 }
