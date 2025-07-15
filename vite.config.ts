@@ -7,5 +7,7 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   server: {
     host: true,
+    open: '/profile', // 開発サーバー起動時に /profile を開く
+    port: 5173,
   },
 });

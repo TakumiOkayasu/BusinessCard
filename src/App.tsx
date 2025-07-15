@@ -2,7 +2,7 @@
 import type React from 'react';
 import { useBusinessCardData } from './hooks/useBusinessCardData';
 import './index.css';
-import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import BusinessCard from './BusinessCard';
 
 const Page: React.FC = () => {
