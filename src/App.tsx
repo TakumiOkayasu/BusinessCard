@@ -2,9 +2,10 @@
 import type React from 'react';
 import { useBusinessCardData } from './hooks/useBusinessCardData';
 import './index.css';
+import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
 import BusinessCard from './BusinessCard';
 
-const App: React.FC = () => {
+const Page: React.FC = () => {
   const { data, loading, error } = useBusinessCardData();
 
   if (loading) {
@@ -39,6 +40,16 @@ const App: React.FC = () => {
         <BusinessCard data={data} />
       </div>
     </div>
+  );
+};
+
+const App: React.FC = () => {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/business_card" element={<Page />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 
