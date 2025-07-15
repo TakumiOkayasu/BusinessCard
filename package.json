@@ -5,7 +5,8 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
-		"build": "bun build ./src/*.ts --outdir ./dist --minify",
+		"build": "vite build",
+		"build:all": "find ./src -name '*.ts' -o -name '*.tsx' | xargs bun build --outdir ./dist --minify",
 		"check": "bunx biome check --write",
 		"preview": "vite preview",
 		"deploy": "bunx wrangler pages deploy ./dist --project-name=business-card"
