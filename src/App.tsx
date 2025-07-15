@@ -1,8 +1,8 @@
 // App.tsx
-import type React from "react";
-import { useBusinessCardData } from "./hooks/useBusinessCardData";
-import "./index.css";
-import BusinessCard from "./BusinessCard";
+import type React from 'react';
+import { useBusinessCardData } from './hooks/useBusinessCardData';
+import './index.css';
+import BusinessCard from './BusinessCard';
 
 const App: React.FC = () => {
   const { data, loading, error } = useBusinessCardData();

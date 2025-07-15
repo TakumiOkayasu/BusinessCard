@@ -1,13 +1,13 @@
-import type React from "react";
+import type React from 'react';
 
 interface IconProps {
   className?: string;
-  "aria-hidden"?: boolean;
+  'aria-hidden'?: boolean;
 }
 
 export const CodeIcon: React.FC<IconProps> = ({
   className,
-  "aria-hidden": ariaHidden,
+  'aria-hidden': ariaHidden,
 }) => {
   // 装飾的な使用の場合
   if (ariaHidden) {
@@ -46,7 +46,7 @@ export const CodeIcon: React.FC<IconProps> = ({
 
 export const EmailIcon: React.FC<IconProps> = ({
   className,
-  "aria-hidden": ariaHidden,
+  'aria-hidden': ariaHidden,
 }) => {
   if (ariaHidden) {
     return (
@@ -83,7 +83,7 @@ export const EmailIcon: React.FC<IconProps> = ({
 
 export const GitHubIcon: React.FC<IconProps> = ({
   className,
-  "aria-hidden": ariaHidden,
+  'aria-hidden': ariaHidden,
 }) => {
   if (ariaHidden) {
     return (
@@ -122,7 +122,7 @@ export const GitHubIcon: React.FC<IconProps> = ({
 
 export const LocationIcon: React.FC<IconProps> = ({
   className,
-  "aria-hidden": ariaHidden,
+  'aria-hidden': ariaHidden,
 }) => {
   if (ariaHidden) {
     return (

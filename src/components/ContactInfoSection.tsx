@@ -1,5 +1,5 @@
-import type React from "react";
-import type { BusinessCardData } from "../types";
+import type React from 'react';
+import type { BusinessCardData } from '../types';
 
 interface ContactItemProps {
   icon: React.ReactNode;
@@ -20,7 +20,6 @@ const ContactInfoSection: React.FC<BusinessCardData> = ({
   github,
   location,
 }) => {
-
   const emailIcon = (
     <img
       src="/data/email-icon.svg"
@@ -30,20 +29,20 @@ const ContactInfoSection: React.FC<BusinessCardData> = ({
   );
 
   const githubIcon = (
-      <img
-        src="/data/github-icon.svg"
-        alt="githubアイコン"
-        className="w-3.5 h-3.5 flex-shrink-0 brightness-0 saturate-100 invert-[20%] dark:invert-[100%]"
-      />
-    );
+    <img
+      src="/data/github-icon.svg"
+      alt="githubアイコン"
+      className="w-3.5 h-3.5 flex-shrink-0 brightness-0 saturate-100 invert-[20%] dark:invert-[100%]"
+    />
+  );
 
   const locationIcon = (
-      <img
-        src="/data/location-icon.svg"
-        alt="位置アイコン"
-        className="w-3.5 h-3.5 flex-shrink-0 brightness-0 saturate-100 invert-[20%] dark:invert-[100%]"
-      />
-    );
+    <img
+      src="/data/location-icon.svg"
+      alt="位置アイコン"
+      className="w-3.5 h-3.5 flex-shrink-0 brightness-0 saturate-100 invert-[20%] dark:invert-[100%]"
+    />
+  );
 
   return (
     <div className="contact-info flex flex-col gap-2.5">
