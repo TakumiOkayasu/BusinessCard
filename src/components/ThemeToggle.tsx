@@ -32,7 +32,7 @@ const ThemeToggle: React.FC = () => {
     return (
       <button
         type="button"
-        className="absolute top-4 right-4 p-2 rounded-full bg-slate-800/80 hover:bg-slate-800/90 transition-colors duration-300 z-10"
+        className="absolute top-4 right-4 p-2 rounded-full bg-slate-800/80 transition-colors duration-300 z-10"
         aria-label="テーマを切り替える"
       >
         <div className="w-5 h-5" />
@@ -44,7 +44,7 @@ const ThemeToggle: React.FC = () => {
     <button
       type="button"
       onClick={toggleTheme}
-      className="absolute top-4 right-4 p-2 rounded-full bg-slate-800/80 hover:bg-slate-800/90 dark:bg-white/80 dark:hover:bg-white/90 transition-colors duration-300 z-10"
+      className="absolute top-4 right-4 p-2 rounded-full bg-slate-800/80 dark:bg-white/80 transition-colors duration-300 z-10"
       aria-label="テーマを切り替える"
     >
       <img
