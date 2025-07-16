@@ -8,20 +8,22 @@ interface HeaderSectionProps {
 
 const HeaderSection: React.FC<HeaderSectionProps> = ({ name, position }) => {
   return (
-    <div className="header flex flex-col gap-1">
-      <div className="flex items-center gap-2 mb-4">
+    <div className="header flex flex-col">
+      <div className="flex items-center text-xs text-slate-800 hover:text-slate-900 transition-colors dark:text-white dark:hover:text-gray-100">
         <img
-          src="/data/code-icon.svg"
-          alt="Code icon"
+          src="/data/dollar-icon-mono.svg"
+          alt="dollar icon"
           className="w-5 h-5 brightness-0 saturate-100 invert-[20%] dark:invert-[100%]"
         />
-        <div className="w-8 h-0.5 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 rounded-full" />
+        <p className="flex text-lg transition-colors dark:text-white dark:hover:text-gray-100">
+          <span className="font-medium">cat profile</span>
+        </p>
       </div>
-      <h1 className="text-xl font-bold text-slate-800 -tracking-wide mb-1 mt-4 dark:text-white">
+      <h1 className="text-xl font-bold text-slate-800 -trabrightness-0 saturate-100cking-wide mb-1 dark:text-white">
         {name}
       </h1>
       {position && (
-        <p className="text-sm font-medium text-slate-800 dark:text-white">
+        <p className="text-sm text-slate-800 mb-4 font-medium dark:text-white">
           {position}
         </p>
       )}
