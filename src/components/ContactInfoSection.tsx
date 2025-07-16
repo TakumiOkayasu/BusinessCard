@@ -8,7 +8,7 @@ interface ContactItemProps {
 
 const ContactItem: React.FC<ContactItemProps> = ({ icon, value }) => {
   return (
-    <div className="flex items-center gap-2.5 text-xs text-slate-800 hover:text-slate-900 transition-colors dark:text-white dark:hover:text-gray-100">
+    <div className="flex items-center gap-2.5 text-xs text-slate-800 transition-colors dark:text-white">
       {icon}
       <span className="font-medium">{value}</span>
     </div>
