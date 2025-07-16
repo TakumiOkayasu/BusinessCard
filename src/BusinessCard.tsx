@@ -1,6 +1,5 @@
 // components/BusinessCard.tsx
 import type React from 'react';
-import BottomAccent from './components/BottomAccent';
 import ContactInfoSection from './components/ContactInfoSection';
 import HeaderSection from './components/HeaderSection';
 import ThemeToggle from './components/ThemeToggle';
@@ -22,7 +21,6 @@ const BusinessCard: React.FC<BusinessCardProps> = ({ data }) => {
         name={data.name}
         position={data.position}
       />
-      <BottomAccent />
     </div>
   );
 };
