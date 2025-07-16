@@ -48,16 +48,16 @@ const ThemeToggle: React.FC = () => {
       aria-label="テーマを切り替える"
     >
       <img
-        src="/data/sun.svg"
+        src="/data/moon.svg"
         alt="ライトモード"
-        className={`w-5 h-5  transition-all duration-300 brightness-0 saturate-100 invert-[42%] sepia-[11%] saturate-[574%] hue-rotate-[184deg] brightness-[93%] contrast-[92%] dark:invert-[20%] dark:sepia-[10%] dark:saturate-[266%] dark:hue-rotate-[184deg] dark:brightness-[80%] dark:contrast-[86%] ${
+        className={`w-5 h-5 transition-all duration-300 brightness-0 saturate-100 invert dark:invert-0 ${
           isDark ? 'opacity-0 rotate-90' : 'opacity-100 rotate-0'
         }`}
       />
       <img
-        src="/data/moon.svg"
+        src="/data/sun.svg"
         alt="ダークモード"
-        className={`w-5 h-5 absolute inset-0 m-auto transition-all duration-300 brightness-0 saturate-100 invert-[42%] sepia-[11%] saturate-[574%] hue-rotate-[184deg] brightness-[93%] contrast-[92%] dark:invert-[20%] dark:sepia-[10%] dark:saturate-[266%] dark:hue-rotate-[184deg] dark:brightness-[80%] dark:contrast-[86%] ${
+        className={`w-5 h-5 absolute inset-0 m-auto transition-all duration-500 brightness-0 saturate-100 invert-[42%] sepia-[11%] saturate-[574%] hue-rotate-[184deg] brightness-[93%] contrast-[92%] dark:invert-[20%] dark:sepia-[10%] dark:saturate-[266%] dark:hue-rotate-[184deg] dark:brightness-[80%] dark:contrast-[86%] ${
           isDark ? 'opacity-100 rotate-0' : 'opacity-0 rotate-90'
         }`}
       />
