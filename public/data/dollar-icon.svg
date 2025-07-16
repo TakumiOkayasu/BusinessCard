@@ -1,19 +1,23 @@
-<svg width="96" height="96" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg">
-  <!-- Dollar sign composed of paths -->
-  <g fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" transform="translate(0, 12)">
-    <!-- Top vertical line -->
-    <path d="M 48 4 L 48 20"/>
-    
-    <!-- Bottom vertical line -->
-    <path d="M 48 44 L 48 60"/>
-    
+<svg width="30" height="64" viewBox="0 0 30 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="dollarGradient" x1="50%" y1="0%" x2="50%" y2="100%" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#004655" offset="0%"/>
+      <stop stop-color="#17858B" offset="12.38%"/>
+      <stop stop-color="#2ABDB9" offset="30.576%"/>
+      <stop stop-color="#DAC0AB" offset="81.784%"/>
+      <stop stop-color="#E9BCA5" offset="100%"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- All paths with gradient -->
+  <g fill="none" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
     <!-- S curve -->
-    <path d="M 60 20
-             C 60 14 54 10 48 10
-             C 42 10 36 14 36 20
-             C 36 26 40 30 48 32
-             C 56 34 60 38 60 44
-             C 60 50 54 54 48 54
-             C 42 54 36 50 36 44"/>
+    <path stroke="url(#dollarGradient)" d="M 27 19 C 27 13 21 9 15 9 C 9 9 3 13 3 19 C 3 25 7 29 15 31 C 23 33 27 37 27 43 C 27 49 21 53 15 53 C 9 53 3 49 3 43"/>
+    
+    <!-- Top vertical line -->
+    <path stroke="url(#dollarGradient)" d="M 15 3 L 15 20"/>
+    
+    <!-- Bottom vertical line -->  
+    <path stroke="url(#dollarGradient)" d="M 15 43 L 15 58"/>
   </g>
 </svg>
