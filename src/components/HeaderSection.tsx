@@ -13,7 +13,7 @@ const HeaderSection: React.FC<HeaderSectionProps> = ({ name, position }) => {
         <img
           src="/data/dollar-icon-mono.svg"
           alt="dollar icon"
-          className="w-5 h-5 brightness-0 saturate-100 invert-[20%] dark:invert-[100%]"
+          className="w-4 h-4 item-left brightness-0 saturate-100 invert-[20%] dark:invert-[100%]"
         />
         <p className="flex text-lg transition-colors dark:text-white">
           <span className="font-medium">cat profile</span>
